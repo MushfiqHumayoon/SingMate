@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0198A36C2BBBF7CA0046DDAC /* CircularVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0198A36B2BBBF7CA0046DDAC /* CircularVisualizerView.swift */; };
+		0198A36E2BBBF7F00046DDAC /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0198A36D2BBBF7F00046DDAC /* BarView.swift */; };
+		0198A3702BBBF8130046DDAC /* CircularBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0198A36F2BBBF8130046DDAC /* CircularBarView.swift */; };
 		01A192642BB60A1F006AD40A /* SingMateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A192632BB60A1F006AD40A /* SingMateApp.swift */; };
 		01A192662BB60A1F006AD40A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A192652BB60A1F006AD40A /* ContentView.swift */; };
 		01A192682BB60A21006AD40A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A192672BB60A21006AD40A /* Assets.xcassets */; };
 		01A1926B2BB60A21006AD40A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A1926A2BB60A21006AD40A /* Preview Assets.xcassets */; };
+		01A192722BB60AA7006AD40A /* AudioAnalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A192712BB60AA7006AD40A /* AudioAnalizer.swift */; };
+		01A1927A2BB6114B006AD40A /* CalmDown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 01A192792BB6114B006AD40A /* CalmDown.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0198A36B2BBBF7CA0046DDAC /* CircularVisualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularVisualizerView.swift; sourceTree = "<group>"; };
+		0198A36D2BBBF7F00046DDAC /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		0198A36F2BBBF8130046DDAC /* CircularBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularBarView.swift; sourceTree = "<group>"; };
 		01A192602BB60A1F006AD40A /* SingMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A192632BB60A1F006AD40A /* SingMateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingMateApp.swift; sourceTree = "<group>"; };
 		01A192652BB60A1F006AD40A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		01A192672BB60A21006AD40A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01A1926A2BB60A21006AD40A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		01A192712BB60AA7006AD40A /* AudioAnalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioAnalizer.swift; sourceTree = "<group>"; };
+		01A192792BB6114B006AD40A /* CalmDown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CalmDown.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0198A3712BBBF89A0046DDAC /* BarViews */ = {
+			isa = PBXGroup;
+			children = (
+				0198A36D2BBBF7F00046DDAC /* BarView.swift */,
+				0198A36F2BBBF8130046DDAC /* CircularBarView.swift */,
+				0198A36B2BBBF7CA0046DDAC /* CircularVisualizerView.swift */,
+			);
+			path = BarViews;
+			sourceTree = "<group>";
+		};
+		0198A3722BBBF8AE0046DDAC /* AudioAnalizer */ = {
+			isa = PBXGroup;
+			children = (
+				01A192712BB60AA7006AD40A /* AudioAnalizer.swift */,
+			);
+			path = AudioAnalizer;
+			sourceTree = "<group>";
+		};
 		01A192572BB60A1F006AD40A = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +81,8 @@
 			children = (
 				01A192632BB60A1F006AD40A /* SingMateApp.swift */,
 				01A192652BB60A1F006AD40A /* ContentView.swift */,
+				0198A3722BBBF8AE0046DDAC /* AudioAnalizer */,
+				0198A3712BBBF89A0046DDAC /* BarViews */,
 				01A192672BB60A21006AD40A /* Assets.xcassets */,
 				01A192692BB60A21006AD40A /* Preview Content */,
 			);
@@ -62,6 +92,7 @@
 		01A192692BB60A21006AD40A /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				01A192792BB6114B006AD40A /* CalmDown.mp3 */,
 				01A1926A2BB60A21006AD40A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -125,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A1927A2BB6114B006AD40A /* CalmDown.mp3 in Resources */,
 				01A1926B2BB60A21006AD40A /* Preview Assets.xcassets in Resources */,
 				01A192682BB60A21006AD40A /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +170,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				01A192662BB60A1F006AD40A /* ContentView.swift in Sources */,
+				0198A36C2BBBF7CA0046DDAC /* CircularVisualizerView.swift in Sources */,
 				01A192642BB60A1F006AD40A /* SingMateApp.swift in Sources */,
+				01A192722BB60AA7006AD40A /* AudioAnalizer.swift in Sources */,
+				0198A36E2BBBF7F00046DDAC /* BarView.swift in Sources */,
+				0198A3702BBBF8130046DDAC /* CircularBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +311,7 @@
 				DEVELOPMENT_TEAM = P42N5HSR8A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need to enable microphone for making audio visualizer";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +341,7 @@
 				DEVELOPMENT_TEAM = P42N5HSR8A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need to enable microphone for making audio visualizer";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

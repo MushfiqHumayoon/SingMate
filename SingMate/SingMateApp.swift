@@ -11,7 +11,7 @@ import SwiftUI
 struct SingMateApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AudioVisualizerView()
         }
     }
 }

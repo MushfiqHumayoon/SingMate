@@ -7,18 +7,34 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AudioVisualizerView: View {
+    @ObservedObject var audioAnalyzer = AudioAnalyzer()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+//        HStack(spacing: 4) {
+//            ForEach(audioAnalyzer.audioLevels.indices, id: \.self) { index in
+//                BarView(value: audioAnalyzer.audioLevels[index])
+//            }
+//        }
+        
+        CircularVisualizerView(audioLevels: audioAnalyzer.audioLevels)
+            .overlay(content: {
+                Circle()
+                    .frame(width: 200, height: 200)
+                Image(.gadi)
+                    .resizable()
+                    .frame(width: 200, height: 200)
+                    .mask {
+                        Circle()
+                            .frame(width: 195, height: 195)
+                    }
+            })
+        .onAppear {
+            audioAnalyzer.startMonitoring()
         }
-        .padding()
+        .onDisappear {
+            audioAnalyzer.stopMonitoring()
+        }
     }
 }
 
-#Preview {
-    ContentView()
-}
